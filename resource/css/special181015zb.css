@@ -1,0 +1,136 @@
+.pageWrap{width:10rem;}
+/*head*/
+.sp_banner{width:10rem;}
+.sp_banner img{width:10rem;}
+.sp_title{height:2.56rem;width:9.4rem;border-bottom:1px solid #ccc;margin:0 auto;font-size:24px;position: relative;}
+[data-dpr ="2"] .sp_title{font-size:48px;}
+[data-dpr ="3"] .sp_title{font-size:72px;}
+.sp_title_evalute{position:absolute;right:0.1rem;bottom:0.75rem;color:#b2b2b2;font-size:12px;}
+[data-dpr="2"] .sp_title_evalute{font-size:24px;}
+[data-dpr="3"] .sp_title_evalute{font-size:36px;}
+/*nav*/
+.nav{padding:0 0.3rem;margin-top:0.76rem;}
+.nav_row{display: table;margin-top:0.2rem;}
+.nav_l{display: table-cell;}
+.nav_r{display: table-cell;padding-left:0.27rem;}
+.nav_box{width:3.7rem;height:2.53rem;border:1px solid #ccc;border-radius: 0.3rem;padding:0.4rem;}
+.nav_box h1{font-size:30px;color:#b3b3b3;position:relative;}
+.nav_box h1 span{display: block;position:absolute;width:0.8rem;height:0.06rem;background:#b3b3b3 ;}
+[data-dpr="2"] .nav_box h1{font-size:60px}
+[data-dpr="3"] .nav_box h1{font-size:90px}
+.nav_box p{margin-top:0.2rem;font-size:12px;}
+[data-dpr="2"] .nav_box p{font-size:24px;}
+[data-dpr="3"] .nav_box p{font-size:42px;}
+/*content-list-D*/
+.content_D{overflow: hidden;border-top:1px solid #b3b3b3;width:9.4rem;margin:0.8rem auto;padding-top:0.4rem;}
+.content_d_item{display: table;border-bottom:1px solid #ffa822;width:100%;padding-bottom:0.4rem;}
+.content_d_item dt{display: table-cell;}
+.content_d_item dt img{width:3.57rem ;}
+.content_d_item dd{display: table-cell;vertical-align: middle;font-size: 16px;padding-left:0.2rem;}
+[data-dpr="2"] .content_d_item dd{font-size: 32px;}
+[data-dpr="3"] .content_d_item dd{font-size: 48px;}
+.content_d_more{color:#ffa922;font-size: 16px;margin-top:0.3rem;}
+[data-dpr="2"] .content_d_more{font-size: 32px;}
+[data-dpr="3"] .content_d_more{font-size: 48px;}
+/*swiper*/
+.content_swiper{padding-top:0.2rem;width:9.4rem;margin:0.7rem auto;border-top:1px solid #b3b3b3;}
+.titSwiper{width:100%;}
+.titSwiper li{  float:left;  
+    background: #fff;
+    line-height:0.66rem; ;
+    text-align: center;
+    padding:0.05rem;border-radius: 0.1rem;}
+.titSwiper li span{float:left;  
+    background: #fff;
+    line-height:0.66rem; ;
+    text-align: center;margin-left:0.21rem;
+    padding:0 0.25rem;border:1px solid #ccc;border-radius: 0.1rem;}
+.titSwiper li span.active{border:none;background: #e6e6e6!important;}
+/*content list*/
+.conten_list{width:10rem;margin-top:0.2rem;}
+.conten_tit{font-size:24px;padding-left:0.25rem;margin-top:0.5rem;margin-bottom:0.5rem;}
+[data-dpr="2"] .conten_tit{font-size:48px;} 
+[data-dpr="3"] .conten_tit{font-size:72px;} 
+.cont_tit2{font-size: 18px;margin:0.2rem 0.2rem;}
+[data-dpr="2"] .cont_tit2{font-size: 36px;}
+[data-dpr="3"] .cont_tit2{font-size: 54px;}
+/*list1*/
+.cont_lis1_banner{padding:0.2rem;background: #e6e6e6;}
+.cont_lis1 li{float:left;width: 4.05rem;}
+.cont_lis1 li img{width: 100%;}
+.cont_lis1_con{padding:0 0.26rem;font-size:14px;}
+[data-dpr="2"] .cont_lis1_con{padding:0 0.26rem;font-size:28px;}
+[data-dpr="3"] .cont_lis1_con{padding:0 0.26rem;font-size:42px;}
+.cont_lis_btn{width:9.2rem;height:1rem;margin:0.64rem auto;border:1px solid #ffa922;color:#ffa922;font-size:20px;line-height: 1rem;text-align: center;}
+[data-dpr="2"] .cont_lis_btn{font-size:40px;}
+[data-dpr="3"] .cont_lis_btn{font-size:60px;}
+/*list2*/
+/*名校*/
+.cont_lis_banner{width: 9.4rem;margin:0.2rem auto;}
+.cont_lis_banner img{width: 9.4rem;}
+.mSchool{border-bottom:1px solid #ccc;padding-bottom:0.4rem;}
+.more_btn{font-size:16px;padding:0.24rem;color:#ffa922;}
+[data-dpr="2"] .more_btn{font-size:32px}
+[data-dpr="3"] .more_btn{font-size:48px;}
+/*美食*/
+.cont_foter_banner{padding:0.2rem;background: #e6e6e6;}
+.font-weight{font-weight: 700;}
+
+.put{padding:0 0.24rem;font-size:16px;}
+.put_t{line-height:1.3rem;height:1.3rem;border-bottom:1px solid #ccc;position: relative;}
+[data-dpr="2"] .put{font-size:32px;}
+[data-dpr="3"] .put{font-size:48px;}
+.put_t_icon{width:0.42rem;height:0.64rem;display:inline-block;background:url(../images/icon_foward.png) no-repeat;
+background-size:100% 100%;position: absolute;right:0.5rem;top:0.36rem;}
+.put_con{padding:0.2rem 0;}
+.blank_bottom{height:2rem;}
+
+/*footer*/
+.sp_footer{
+	width:10rem;height:1.15rem;border-top:1px solid #ccc;position: fixed;bottom:0;background: #FFFFFF;z-index: 999;
+}
+.sp_footer div{width:50%;float: left;height:100%;text-align: center;line-height: 1.15rem;font-size:18px;}
+.left_btn{background: #fff;color:#ffa822;}
+.right_btn{background: #ffa822;color:#fff;}
+[data-dpr="2"] .sp_footer div{font-size:36px;}
+[data-dpr="3"] .sp_footer div{font-size:54px;}
+.smf{font-size:12px;}
+[data-dpr="2"] .smf{font-size:24px;}
+[data-dpr="3"] .smf{font-size:36px;}
+
+/*home page*/
+.header_tit{width:10rem;font-size:22px;color:#fff;background: #333333;text-align: center;height: 1.18rem;line-height: 1.18rem;}
+[data-dpr="2"] .header_tit{font-size:44px;}
+[data-dpr="3"] .header_tit{font-size:66px;}
+/*nav*/
+.home_nav{width:10rem;overflow: hidden;height:3.4rem;}
+.nav-box{font-size:20px;}
+[data-dpr="2"] .nav-box{font-size:40px;}
+[data-dpr="3"] .nav-box{font-size:60px;}
+.nav-box ul li{width:2.5rem;height:2rem;text-align: center;}
+.nav-box li img{height:1.3rem;}
+/*pagination style*/
+.swiper-wrapper{position:relative;}
+.swiper-pagination{position: absolute;
+    top: 7.92rem;
+    left: -4.5rem;}
+.swiper-pagination-customs{ display: inline-block; width:0.1rem;height:0.1rem;background:#fea821;border-radius:0.05rem;margin-left:0.14rem;  opacity: 0.55;}
+.swiper-pagination-customs-active{  background:#fea821;width:0.28rem;height:0.1rem; opacity: 1; }
+/*navlist*/
+.navList{padding:0.2rem;}
+.navList-table{display:table;width: 100%;table-layout: fixed;}
+.tab-tr{display: table-row;}
+.tab-td{display: table-cell;text-align: left;font-size:15px;font-weight: 600;line-height: 0.7rem;
+border-bottom:1px solid #e6e6e6;padding-bottom: 0.42rem;;}
+[data-dpr="2"] .tab-td{font-size:30px;}
+[data-dpr="3"] .tab-td{font-size:45px;}
+.tab-td img{width:3.12rem;}
+.navList-table .tab-tr:nth-child(1) .tab-td{padding-top:0.2rem;border-top:1px solid #e6e6e6;}
+.navList-table .tab-tr:nth-child(2) .tab-td{padding-top:0.2rem;}
+/*detail*/
+.detail{padding:0.4rem 0.2rem;}
+.detail-item{display: inline-block;margin-top:0.6rem;}
+.detail-item img{width:100%;}
+.detail-font{width: 100%;font-size:18px;font-weight: 600;}
+[data-dpr="2"] .detail-font{font-size:36px;}
+[data-dpr="3"] .detail-font{font-size:54px;}

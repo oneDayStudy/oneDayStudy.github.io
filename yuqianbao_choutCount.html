@@ -1,0 +1,518 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="yes" name="apple-touch-fullscreen">
+    <meta content="telephone=no,email=no" name="format-detection">
+    <script src="./resource/lib-flexible-master/build/flexible_css.js"></script>
+    <script src="./resource/lib-flexible-master/build/flexible.js"></script>
+    <link type="text/css" rel="stylesheet" href="./resource/css/global.css">
+	<link type="text/css" rel="stylesheet" href="./resource/css/yuqiabao1811zb.css">
+    <title>支付方式</title>
+</head>
+<body>
+        <div class="pageWrap cardPage">
+			<!--header-->
+        	<div class="header_tit">
+				<span class="returnBtn"></span>
+				支付方式
+        	</div>
+			<!--content-->
+			<div class="chout_content">
+				<!--orderlist-->
+				<ul class="chout_order">
+					<li class="orderShow">
+						<p>订单金额 <span class="orderShow_num">￥<i>2000</i>.00</span></p>
+						<a href="javascript:;" class="payremain">支付剩余 <span>2天23时43分25秒</span></a>
+					</li>
+					<li class="orderDetail">
+						<p><span>东风雪铁龙Kl-fxs_S苏州_RF0008920_S000876</span></p>
+						<p>
+							<span>类型：即时到账交易</span>
+							<span>收款商家：ABC123</span>
+						</p>
+					</li>
+				</ul>
+				<div class="pay_tit">
+					支付方式
+				</div>
+				<!--pay list-->
+				<div class="payList">
+					<ul class="payItem">
+						<li class="">
+							<span><i class="smallIcon1"></i></span>
+							<span>
+								<p class="yqb_overage">鱼钱宝余额：<span>90990</span>元</p>
+								<p>无需手续费</p>
+							</span>
+							<span><i class="paychoisedIcon yqbPay"></i></span>
+							<div class="clearfix"></div>
+						</li>
+						<li class="payInpIter yqbInp" style="display: block;">
+							<div class="payInp">
+								<span>余额支付：</span>
+								<input type="number" class="yqbVal" placeholder="请输入付款金额">
+							</div>
+							<div class="clearfix"></div>
+						</li>
+
+					</ul>
+					<ul class="payItem">
+						<li class="">
+							<span><i class="smallIcon2"></i></span>
+							<span>
+								<p class="xyb_overage">小八信用宝可用额度：<span>900990</span>元</p>
+								<p>无需手续费</p>
+							</span>
+							<span><i class="paychoiseIcon xybPay"></i></span>
+							<div class="clearfix"></div>
+						</li>
+						<li class="payInpIter xybInp" style="display: block;">
+							<div class="payInp">
+								<span>信用宝支付：</span>
+								<input type="number" class="xybVal" placeholder="请输入付款金额">
+							</div>
+							<div class="clearfix"></div>
+						</li>
+
+					</ul>
+					<ul class="payItem">
+						<li class="">
+							<span><i class="smallIcon3"></i></span>
+							<span>
+								<p>快捷支付</p>
+								<p>需额外收取千分之四手续费<i class="descriptionIcon"></i></p>
+							</span>
+							<span><i class="paychoiseIcon kjPay"></i></span>
+							<!--description dealog-->
+							<div class="descDialog" style="display:none;">
+								detail 123
+							</div>
+							<div class="clearfix"></div>
+						</li>
+						<li class="fastPayIter" style="display: block;">
+							<span class="myCard">
+								<p>中国银行储蓄卡</p>
+								<p><span>陈浩</span><span> **************6691</span></p>
+							</span>
+							<span class="changeCardBtn">
+								更换 <i class="chanCaIcon"></i>
+							</span>
+							<div class="clearfix"></div>
+						</li>
+					</ul>
+					<ul class="payItem">
+						<li class="">
+							<span><i class="smallIcon4"></i></span>
+							<span>
+								<p>快捷支付</p>
+								<p>需额外收取千分之四手续费 <i class="descriptionIcon"></i></p>
+							</span>
+							<span><i class="paychoiseIcon zfbPay"></i></span>
+							<!--description dealog-->
+							<div class="descDialog" style="display:none;">
+								detail 123
+							</div>
+							<div class="clearfix"></div>
+						</li>
+
+					</ul>
+					<div class="blank_40">
+					</div>
+
+				</div>
+			</div>
+			<!--footer&btn-->
+			<div class="selBtn">
+					<!--未选中-->
+					<a href="javascript:;" class="noSelBtn" style="display: none">下一步</a>
+					<!--选中-->
+					<a href="javascript:;" class="yesSelBtn" style="display: block">下一步 <span>￥<i class="counPrice">2008</i>.00 (含手续费)</span></a>
+			</div>
+			<!--选择银行卡-->
+			<div class="">
+				<!--选择银行卡弹层-->
+				<div class="chose_cards">
+					<div class="chose_border">
+						<div class="bor_header">选择银行卡</div>
+						<div class="bor_wai">
+							<div class="cards_add"><img src="resource/images/icon_bank_card_add@2x.png" alt=""/>添加银行卡</div>
+							<div class="cards_list">
+								<div class="cards_left">
+									<img src="resource/images/icon_bank_bank_name@2x.png" alt=""/>
+									<div class="cardDetails">
+										<p class="cardName">招商银行</p>
+										<p class="userName"><span>陈浩</span><span>************6690</span></p>
+									</div>
+								</div>
+								<input type="radio" name="1" class="inp_cards"/>
+							</div>
+							<div class="cards_list">
+								<div class="cards_left">
+									<img src="resource/images/icon_bank_bank_name@2x.png" alt=""/>
+									<div class="cardDetails">
+										<p class="cardName">中国农业银行</p>
+										<p class="userName"><span>秦海川</span><span>************6333</span></p>
+									</div>
+								</div>
+								<input type="radio" name="1" class="inp_cards"/>
+							</div>
+							<div class="cards_list">
+								<div class="cards_left">
+									<img src="resource/images/icon_bank_bank_name@2x.png" alt=""/>
+									<div class="cardDetails">
+										<p class="cardName">中国银行</p>
+										<p class="userName"><span>高敏</span><span>************4444</span></p>
+									</div>
+								</div>
+								<input type="radio" name="1" class="inp_cards"/>
+							</div>
+							<div class="cards_list">
+								<div class="cards_left">
+									<img src="resource/images/icon_bank_bank_name@2x.png" alt=""/>
+									<div class="cardDetails">
+										<p class="cardName">中国建设银行</p>
+										<p class="userName"><span>陈浩</span><span>************5555</span></p>
+									</div>
+								</div>
+								<input type="radio" name="1" class="inp_cards"/>
+							</div>
+							<div class="cards_list">
+								<div class="cards_left">
+									<img src="resource/images/icon_bank_bank_name@2x.png" alt=""/>
+									<div class="cardDetails">
+										<p class="cardName">南京银行</p>
+										<p class="userName"><span>李栋</span><span>************6678</span></p>
+									</div>
+								</div>
+								<input type="radio" name="1" class="inp_cards"/>
+							</div>
+						</div>
+					</div>
+
+				</div>
+
+				<!--支付说明弹层-->
+				<div class="tip_mask">
+					<div class="tip_border">
+						<div class="tip_wai">
+							<div>1.无需开通网银，按照操作步骤完成绑卡操作即可开通快捷支付。</div>
+							<div>2.支付更便捷，一次绑卡成功后，无需银行扣了卡或U盾等验证，仅需支付密码及手机验证码即可完成支付。</div>
+							<div>3.快捷支付需额外收取千分之四手续费，该费用为用户自行承担。</div>
+						</div>
+						<div class="know">
+							<span>我知道了</span>
+						</div>
+					</div>
+
+				</div>
+			</div>
+        </div>
+
+  <script type="text/javascript" src="./resource/javascript/jquery.min.js"></script>
+   <script type="text/javascript" src="./resource/javascript/global.js"></script>
+  <!--2017/04/21新增js-->
+  <script type="text/javascript">
+//	  功能介绍
+//	1：时间倒计时，获取指定的设置时间  SysSecond  =30 参数为秒
+
+//  2：点击每个select选择框图标切换
+//	3：点击鱼钱宝和小八信用宝支付出现可填写数字输入框
+// 4:输入框输入数字余额宝和小八信用宝的余额量都会跟随数字而相应减少
+//5：当再次点击按钮会收回对应的输入框并且本行输入框内容清空，余额也会回到原余额。
+//6：只有两个输入框都清空 鱼钱宝和小八信用宝都取消选择时底部按钮才会变灰色。
+//7:只要选择除了快捷支付和支付宝支付的任意一个，底部按钮都会显示可点击状态，勾选掉就会显示不可点击状态
+//8:鱼钱宝和小八信用宝只选中而没有输入金额 是不能够点击底部按钮 既底部按钮是非选择状态
+
+//9:  点击问好图标会弹出详细信息模态框。
+//10：点击选择银行弹出银行模态框
+//11：银行模态框内点击单选选中银行卡 点击银行卡（对应的列表部分）会选中银行 并且相应的信息立即更新到快捷支付的银行信息并一一对应
+//11-2：如果点击其他未勾选的银行卡，选择银行卡弹层不会消失。
+//12：选择添加新银行 则跳转到添加银行卡页面
+//	  初始化
+function initFn(){
+	$(".tip_mask").hide()
+	$(".chose_cards").hide()
+	$(".yesSelBtn").hide()
+	$(".noSelBtn").show()
+
+	$(".yqbInp").hide()
+	$(".xybInp").hide()
+
+	var yqb = $(".yqbPay"),xyb = $(".xybPay"),kj = $(".kjPay"),zfb = $(".zfbPay")
+	yqb.addClass("paychoiseIcon").removeClass("paychoisedIcon")
+
+}
+
+$(function(){
+	initFn()
+
+//	选择支付方式：
+//	鱼钱宝可用余额
+
+		var yqb_price = $(".yqb_overage span").text();
+		var xyb_price = $(".xyb_overage span").text();
+		yqb_price = parseFloat(yqb_price)
+		xyb_price = parseFloat(xyb_price)
+				$(".yqbVal").on("input propertypchange change",function(){
+					var inp = $(this).val()
+					inp = parseFloat(inp)
+					if($(this).val()){
+						$(".yqb_overage span").text(yqb_price-inp)
+					}else{
+						//	防止NaN
+						$(".yqb_overage span").text(yqb_price)
+					}
+				})
+				$(".xybVal").on("input propertypchange change",function(){
+					var inp = $(this).val()
+					inp = parseFloat(inp)
+					if( $(this).val()){
+						$(".xyb_overage span").text(xyb_price-inp)
+					}else{
+						$(".xyb_overage span").text(xyb_price)
+					}
+				})
+//	yqbPay,xybPay,klPay,zfbPay
+	$(".yqbPay").on("click",function(){
+		if(!$(".yqbVal").val()&&!$(".xybVal").val()){
+			$(".yesSelBtn").hide()
+			$(".noSelBtn").show()
+		}
+		if($(this).hasClass("paychoisedIcon")){
+			$(this).addClass("paychoiseIcon").removeClass("paychoisedIcon")
+			$(this).parents(".payItem").find(".payInpIter").hide()
+			$(".yqbVal").val("")//取消选择清除值
+			$(".yqb_overage span").text(yqb_price)
+		}else{
+			$(this).addClass("paychoisedIcon").removeClass("paychoiseIcon")
+			$(this).parents(".payItem").find(".payInpIter").show()
+			//另外两种选择取消
+			$(".kjPay").addClass("paychoiseIcon").removeClass("paychoisedIcon")
+			$(".zfbPay").addClass("paychoiseIcon").removeClass("paychoisedIcon")
+			$(".yqbVal").val("")//清值
+		}
+		if($(this).hasClass("paychoisedIcon")||$(".xybPay").hasClass("paychoisedIcon")){
+			$(".yqbVal").on("input propertychange",function(){
+				if($(".yqbVal").val()||$(".xybVal").val()){
+					$(".yesSelBtn").show()
+					$(".noSelBtn").hide()
+				}else{
+					$(".yesSelBtn").hide()
+					$(".noSelBtn").show()
+				}
+			})
+		}else{
+			$(".yesSelBtn").hide()
+			$(".noSelBtn").show()
+		}
+	})
+//xyb paybtn ----------------------
+	$(".xybPay").on("click",function(){
+		if(!$(".xybVal").val()&&!$(".yqbVal").val()){
+			$(".yesSelBtn").hide()
+			$(".noSelBtn").show()
+		}
+		if($(this).hasClass("paychoisedIcon")){
+			$(this).addClass("paychoiseIcon").removeClass("paychoisedIcon")
+				$(this).parents(".payItem").find(".payInpIter").hide()
+			$(".xybVal").val("")//取消选择清除值
+			$(".xyb_overage span").text(xyb_price)
+		}else{
+			$(this).addClass("paychoisedIcon").removeClass("paychoiseIcon")
+				$(this).parents(".payItem").find(".payInpIter").show()
+
+			//另外两种选择取消
+			$(".kjPay").addClass("paychoiseIcon").removeClass("paychoisedIcon")
+			$(".zfbPay").addClass("paychoiseIcon").removeClass("paychoisedIcon")
+
+			$(".xybVal").val("")//取消选择清除值
+		}
+		if($(this).hasClass("paychoisedIcon")||$(".yqbPay").hasClass("paychoisedIcon")){
+			$(".xybVal").on("input propertychange",function(){
+				if($(".yqbVal").val()||$(".xybVal").val()){
+					$(".yesSelBtn").show()
+					$(".noSelBtn").hide()
+				}else{
+					$(".yesSelBtn").hide()
+					$(".noSelBtn").show()
+				}
+			})
+		}else{
+			$(".yesSelBtn").hide()
+			$(".noSelBtn").show()
+		}
+	//
+		})
+//	kj btn ---------------------------------------
+	$(".kjPay").on('click',function(){
+		if($(this).hasClass("paychoisedIcon")){
+			$(this).addClass("paychoiseIcon").removeClass("paychoisedIcon")
+
+			$(".yesSelBtn").hide()
+			$(".noSelBtn").show()
+		}else{
+			$(this).addClass("paychoisedIcon").removeClass("paychoiseIcon")
+//			inp
+			$(".yqbInp").hide()
+			$(".xybInp").hide()
+			//另外两种选择取消
+			$(".yqbPay").addClass("paychoiseIcon").removeClass("paychoisedIcon")
+			$(".xybPay").addClass("paychoiseIcon").removeClass("paychoisedIcon")
+			$(".zfbPay").addClass("paychoiseIcon").removeClass("paychoisedIcon")
+
+			$(".yesSelBtn").show()
+			$(".noSelBtn").hide()
+
+			$(".yqbVal").val("")//取消选择清除值
+			$(".xybVal").val("")//取消选择清除值
+		}
+	})
+//	zfb pay btn------------------------------------------------
+	$(".zfbPay").on('click',function(){
+		if($(this).hasClass("paychoisedIcon")){
+			$(this).addClass("paychoiseIcon").removeClass("paychoisedIcon")
+
+			$(".yesSelBtn").hide()
+			$(".noSelBtn").show()
+		}else{
+			$(this).addClass("paychoisedIcon").removeClass("paychoiseIcon")
+//			inp
+			$(".yqbInp").hide()
+			$(".xybInp").hide()
+			//另外两种选择取消
+			$(".yqbPay").addClass("paychoiseIcon").removeClass("paychoisedIcon")
+			$(".xybPay").addClass("paychoiseIcon").removeClass("paychoisedIcon")
+			$(".kjPay").addClass("paychoiseIcon").removeClass("paychoisedIcon")
+
+			$(".yesSelBtn").show()
+			$(".noSelBtn").hide()
+
+			$(".xybVal").val("")//取消选择清除值
+		}
+	})
+//-----------------	可选按钮
+
+//	---------按钮数值
+	var yqbV =0
+	var xybV =0
+	var num = 0
+	$(".yqbVal").on('input propertychange',function(){
+		yqbV =parseInt( $(".yqbVal").val())
+		console.log(yqbV,xybV)
+
+		$(".yesSelBtn .counPrice").text()
+	})
+	$(".xybVal").on('input propertychange',function(){
+		xybV =parseInt( $(".xybVal").val())
+
+		$(".yesSelBtn .counPrice").text()
+	})
+
+})
+
+//	  更换银行卡
+	  $(function(){
+		  $(".changeCardBtn").on('click',function(){
+			  $(".chose_cards").fadeIn()
+		  })
+		  $(".cards_left").on('click',function(){
+//			  第一种选择方式：
+//			  var yesC =$(this).siblings("input:checked").val()// if checed val is "on"
+//			  if(yesC){
+//				  $(".chose_cards").fadeOut()
+//			  }
+//			  第二种选择方式：
+//			 $(this).siblings("input").attr("checked","checked")
+			  $(this).siblings("input").click()
+			 var Timer4 = setTimeout(function(){
+				 $(".chose_cards").fadeOut()
+				 clearTimeout(Timer4)
+			 },300)
+		  })
+//		  点击区域外部关闭
+			$(".chose_cards").on("click",function(e){
+				e.stopPropagation()
+				if($(e.target).context.className =="chose_cards"){
+					$(".chose_cards").fadeOut()
+				}
+			})
+		  $(".inp_cards").on('click',function(){
+//		选择银行
+			  var cardname = $(this).parents(".cards_list").find(".cardName").text()
+			  var username = $(this).parents(".cards_list").find(".userName").find("span:first").text()
+			  var usernum = $(this).parents(".cards_list").find(".userName").find("span:last").text()
+			  var mycardname = $(".myCard").find("p:first").text(cardname)
+			  var myusername = $(".myCard").find("p:last").find("span:first").text(username)
+			  var myusernum = $(".myCard").find("p:last").find("span:last").text(usernum)
+
+			  var Timer = setInterval(function(){
+				  $(".chose_cards").fadeOut()
+				 clearInterval(Timer)
+			 },300)
+		  })
+	  })
+//	  添加银行卡
+	  $(function(){
+		  $(".cards_add").on("click",function(){
+			  $(location).attr('href', 'yuqianbao_addcard.html');
+		  })
+//		  return btn
+		  $(".returnBtn").on('click',function(){
+			  $(location).attr("href","yuqianbao_1811zb.html")
+
+		  })
+		  $(".yesSelBtn").on('click',function(){
+			  if($(".yqbPay ").hasClass("paychoisedIcon")){
+				  $(location).attr("href","yuqianbao_syt1.html")
+			  }
+		  })
+	  })
+//		模态框
+	  $(function(){
+		  $(".descriptionIcon").on("click",function(){
+			  $(".tip_mask").fadeIn()
+		  })
+		  $(".know").on("click",function(){
+			  $(".tip_mask").fadeOut()
+		  })
+	  })
+//	  时间倒计时
+	  $(function(){
+		  var systimer = $(".payremain span").html()
+		  systimer = parseInt(systimer)
+		  var SysSecond  =300
+		  var second = Math.floor(SysSecond % 60);
+		  var minite = Math.floor((SysSecond / 60) % 60);      //计算分
+		  var hour = Math.floor((SysSecond / 3600) % 24);      //计算小时
+		  var day = Math.floor((SysSecond / 3600) / 24);        //计算天
+		  $(".payremain span").html(day + "天" + hour + "小时" + minite + "分" + second + "秒");
+		  console.log(SysSecond )
+		  var InterValObj = window.setInterval(SetRemainTime,1000)
+
+		  var SysSecond;
+		  function SetRemainTime(){
+			  if(SysSecond){
+				  if (SysSecond > 0){
+					  SysSecond = SysSecond - 1;
+					   second = Math.floor(SysSecond % 60);
+					   minite = Math.floor((SysSecond / 60) % 60);      //计算分
+					   hour = Math.floor((SysSecond / 3600) % 24);      //计算小时
+					   day = Math.floor((SysSecond / 3600) / 24);        //计算天
+					  $(".payremain span").html(day + "天" + hour + "小时" + minite + "分" + second + "秒");
+					  if(SysSecond==0){
+						  console.log("vor")
+						  $(location).attr("href","yuqianbao_result1811zb.html")
+					  }
+				  }else if(SysSecond == 0){
+					  window.clearInterval(InterValObj);
+				  }
+			  }
+		  }
+
+	  })
+
+  </script>
+</body>
+</html>

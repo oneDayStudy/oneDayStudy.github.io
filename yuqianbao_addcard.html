@@ -1,0 +1,118 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="yes" name="apple-touch-fullscreen">
+    <meta content="telephone=no,email=no" name="format-detection">
+    <script src="./resource/lib-flexible-master/build/flexible_css.js"></script>
+    <script src="./resource/lib-flexible-master/build/flexible.js"></script>
+    <link type="text/css" rel="stylesheet" href="./resource/css/global.css">
+	<link type="text/css" rel="stylesheet" href="./resource/css/yuqiabao1811zb.css">
+    <title>添加银行卡</title>
+</head>
+<body>
+        <div class="pageWrap cardPage">
+
+        	<div class="header_tit">
+				<span class="returnBtn"></span>
+				添加银行卡
+        	</div>
+        	<div class="cardlist">
+				<ul class="carditer">
+					<li class="car_card">
+						<span class="car_l">银行</span>
+						<span class="car_r chioseCar"><em>选择银行</em><i class="chioseIcon"></i></span>
+					</li>
+					<li class="car_card">
+						<span class="car_l">银行卡号</span>
+						<span class="car_r"> <input type="text" placeholder="输入银行卡号"></span>
+					</li>
+				</ul>
+				<ul class="carditer">
+					<li class="car_card">
+						<span class="car_l">姓名</span>
+						<span class="car_r"> <input type="text" placeholder="输入姓名"></span>
+					</li>
+					<li class="car_card">
+						<span class="car_l">身份证</span>
+						<span class="car_r"> <input type="text" placeholder="输入身份证号码"></span>
+					</li>
+				</ul>
+				<ul class="carditer">
+					<li class="car_card">
+						<span class="car_l">手机号</span>
+						<span class="car_r"><input type="text" placeholder="输入银行预留手机号"></span>
+					</li>
+					<li class="car_card">
+						<span class="car_l">验证码</span>
+						<span class="car_r"><input type="text" placeholder="输入短信验证码"> <a href="javascript:;" class="repeatsend">重新发送 ( 48 )</a></span>
+					</li>
+				</ul>
+				<p class="readover">
+					<i class="readchoiseIcon"></i><span>我已阅读协议</span>
+				</p>
+			</div>
+			<div class="addcard_footer">
+					<a href="" class="addcardBtn">确认绑卡</a>
+			</div>
+			<!--验证码错误情况-->
+			<div class="virificationError" style="display: none;">
+				<a href="javascript:;">验证码错误</a>
+			</div>
+			<!--选择银行列表半弹层页-->
+			<div class="chioseCardBox" style="display: none">
+				<ul>
+					<li><span>苏州银行 <i class="carChioedIcon" style="display: none;"></i> </span><span>建设银行<i class="carChioedIcon" style="display: none;"></i></span></li>
+					<li><span>招商银行 <i class="carChioedIcon" style="display: none;"></i> </span><span>农业银行<i class="carChioedIcon" style="display: none;"></i></span></li>
+					<li><span>广大银行 <i class="carChioedIcon" style="display: none;"></i> </span><span>北京银行<i class="carChioedIcon" style="display: none;"></i></span></li>
+					<li><span>上海银行 <i class="carChioedIcon" style="display: none;"></i> </span><span>交通银行<i class="carChioedIcon" style="display: none;"></i></span></li>
+					<li><span>浦东银行 <i class="carChioedIcon" style="display: none;"></i> </span><span>江苏银行<i class="carChioedIcon" style="display: none;"></i></span></li>
+					<li><span>广州银行 <i class="carChioedIcon" style="display: none;"></i> </span><span>中国银行<i class="carChioedIcon" style="display: none;"></i></span></li>
+				</ul>
+			</div>
+        </div>
+        <style>
+        </style>
+  <script type="text/javascript" src="./resource/javascript/jquery.min.js"></script>
+   <script type="text/javascript" src="./resource/javascript/global.js"></script>
+
+  <script type="text/javascript">
+//	  功能介绍
+//1：点击选择银行按钮会弹出银行选择列表，并且图标切换向右箭头
+//2：选择一个银行会出现小角标，原银行栏目会实时更新为选择的银行
+//3点击选择银行（此时已经显示为具体银行）银行列表消失，箭头图标还原。
+
+	$(function(){
+	$(".readchoiseIcon").on('click',function(){
+		$(this).toggleClass("readchoisedIcon")
+	})
+//		选择银行卡
+		$(".chioseCar").on("click",function(){
+		$(".chioseCardBox").fadeIn()
+		$(this).children(".chioseIcon").addClass("chioseIcon2").removeClass("chioseIcon")
+
+	})
+	$(".chioseCardBox li span").on("click",function(){
+		$(".chioseCardBox li span .carChioedIcon").css("display","none")
+		$(".chioseCardBox li span .carChioedIcon").removeClass("ch")
+		$(this).find(".carChioedIcon").toggle()
+		$(this).find(".carChioedIcon").addClass("ch")
+
+		var newCardName = $(this).text()
+		$(".chioseCar").find("em").text(newCardName)
+		$(".chioseCar i").addClass("chioseIcon").removeClass("chioseIcon2")
+		setTimeout(function(){
+			$(".chioseCardBox").fadeOut()
+		},150)
+	})
+	})
+     $(function(){
+//      btn
+     	$(".returnBtn").click(function(){
+			$(location).attr("href","yuqianbao_choutCount.html")
+		})
+     })
+  </script>
+</body>
+</html>

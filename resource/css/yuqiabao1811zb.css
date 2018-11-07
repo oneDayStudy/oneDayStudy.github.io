@@ -1,0 +1,545 @@
+
+/*登录页--------------------------*/
+html,body{height:100%;}
+.pageWrap{width:10rem;}
+/*head*/
+.sp_banner{width:10rem;}
+.sp_banner img{width:10rem;}
+.sp_title{height:2.56rem;width:9.4rem;border-bottom:1px solid #ccc;margin:0 auto;font-size:24px;position: relative;}
+[data-dpr ="2"] .sp_title{font-size:48px;}
+[data-dpr ="3"] .sp_title{font-size:72px;}
+.sp_title_evalute{position:absolute;right:0.1rem;bottom:0.75rem;color:#b2b2b2;font-size:12px;}
+[data-dpr="2"] .sp_title_evalute{font-size:24px;}
+[data-dpr="3"] .sp_title_evalute{font-size:36px;}
+/*home page*/
+/*title*/
+.header_tit{width:10rem;font-size:15px;color:#fff;background:#1890FF;text-align: center;height: 1.18rem;line-height: 1.18rem;position: relative;}
+[data-dpr="2"] .header_tit{font-size:30px;}
+[data-dpr="3"] .header_tit{font-size:45px;}
+
+.returnBtn{position: absolute;left: 0.373rem;top:0.389rem;display: inline-block;background: url("../images/icon_nav_return@2x.png")no-repeat;width: 0.474rem;height:0.379rem;
+background-size:100% }
+
+/*nav*/
+.y_nav{width: 100%;height:1.28rem;margin-top:1.28rem;text-align: center;}
+.y_nav img{width:3.97rem;heigth:1.28rem;display: inline-block;}
+/*input list*/
+.y_inp{  width: 100%;margin-top:1.12rem;}
+.inp_list{width:8.72rem;height:1.006rem;border-bottom:1px solid #E0E0E0;margin:0 auto;position: relative; }
+.inp_list input{height:100%;width:6.72rem;font-size: 14px;border: none;color:#B6B6B9;}
+[data-dpr="2"] .inp_list input{font-size:28px}
+[data-dpr="3"] .inp_list input{font-size:42px}
+.errorIcon{display: inline-block;width:0.426rem;height:0.426rem;background: url("../images/public_input_cleanText_icon@2x.png") no-repeat;
+background-size:100%;position:absolute;right:0;top:0.32rem;}
+.inp_list:nth-child(2){margin-top:0.64rem;}
+.eyeIcon{display: inline-block;width:0.56rem;height:0.3rem;background: url("../images/icon_eye_open@2x.png") no-repeat;
+    background-size:100%;position:absolute;right:0.88rem;top:0.32rem;}
+/*button*/
+.y_btn{width:100%;text-align: center;font-size:14px;margin-top:1.253rem;}
+[data-dpr="2"] .y_btn{font-size:28px;}
+[data-dpr="3"] .y_btn{font-size:42px;}
+.y_btn a{text-align: center;display: inline-block;width:8.72rem;height:1.173rem;line-height: 1.173rem;
+border-radius:0.1rem;background: #18A0FF ;color:#fff;}
+
+/*支付结果-------------------------------------*/
+.pay_num{font-size:14px;margin-top:0.853rem;}
+[data-dpr="2"] .pay_num{font-size:28px;}
+[data-dpr="3"] .pay_num{font-size:42px;}
+.pay_num span{font-size:24px;}
+[data-dpr="2"] .pay_num span{font-size:48px;}
+[data-dpr="3"] .pay_num span{font-size:72px;}
+
+.error_pay{color:#FF9469;}
+.success_pay{color:#30D271;}
+.paybox{width:10rem;text-align: center;margin-top:1.28rem;font-size:15px;}
+[data-dpr="2"] .paybox{font-size:30px;}
+[data-dpr="3"] .paybox{font-size:45px;}
+.paybox img{width:1.92rem;height:1.92rem;}
+.paybox p:nth-child(2){margin-top:0.42rem;}
+
+.pay_footer{width:10rem;height:2rem;position: fixed;bottom:1.28rem;text-align: center;}
+.pay_footer p:nth-child(1){font-size:14px;color:#666666;}
+[data-dpr="2"] .pay_footer p:nth-child(1){font-size:28px;}
+[data-dpr="3"] .pay_footer p:nth-child(1){font-size:42px;}
+.pay_footer p:nth-child(2){margin-top:0.293rem;}
+.turningBtn{display: inline-block;font-size:15px;color:#999999;height:1.173rem;line-height:1.173rem;width:2.88rem;border:1px solid #999999;border-radius:0.693rem;}
+[data-dpr="2"] .turningBtn{font-size: 30px;}
+[data-dpr="3"] .turningBtn{font-size: 45px;}
+
+/*添加银行卡页---------------------------------------*/
+
+.cardPage{height:100%;width:10rem;background: #f2f4f7;overflow-x:hidden;}
+.cardlist{background: #f2f4f7;}
+.addcard_footer{width:10rem;height:1.3rem;background: #1890FF;line-height: 1.3rem;text-align: center;color: #fff;font-size: 15px;
+position: fixed;bottom: 0;}
+[data-dpr="2"] .addcard_footer{font-size: 30px;}
+[data-dpr="3"] .addcard_footer{font-size: 45px;}
+
+.cardlist ul{ border-top:0.013rem solid #dddddd;margin-top:0.533rem;}
+.cardlist ul li{height:1.36rem;line-height: 1.36rem;width: 10rem;background: #fff;color: #333333;font-size: 15px;
+    border-bottom:0.013rem solid #dddddd;}
+
+.carditer{margin-top:0.533rem;}
+.car_card{font-size:15px;}
+[data-dpr="2"] .car_card{font-size:30px;}
+[data-dpr="3"] .car_card{font-size:45px;}
+.car_l{float:left;margin-left:0.4rem;}
+.car_r{float:right;margin-right:0.2rem;color:#999999}
+
+.car_card input{height:0.8rem;margin-right:0.1rem; text-align: right;border:none;}
+
+.chioseIcon{display: inline-block;width:0.3733rem;height:0.21333rem;background: url("../images/icon_arrow_down@2x.png") no-repeat;background-size:100%;margin-left:0.2rem; }
+.chioseIcon2{display: inline-block;width:0.21333rem;height:0.37333rem;background: url("../images/icon_arrow_right_lighten@2x.png") no-repeat;background-size:100%;
+    padding-bottom: 0.1rem;margin-left:0.36rem;
+    vertical-align: middle;}
+.readover{color: #1890FF;font-size:15px;margin-top:0.4rem;line-height: 0.56rem;}
+[data-dpr="2"] .readover{font-size:30px;}
+[data-dpr="3"] .readover{font-size:45px;}
+.readchoiseIcon{display: inline-block;width:0.426rem;height:0.426rem;background: url("../images/icon_circle_uncheck@2x.png") no-repeat;
+    background-size:100%;vertical-align: middle;margin-left:0.4rem;margin-right:0.21rem;margin-bottom:0.08rem; }
+.readchoisedIcon{display: inline-block;width:0.426rem;height:0.426rem;background: url("../images/icon_circle_checked@2x.png") no-repeat;
+    background-size:100%;vertical-align: middle;margin-left:0.4rem;margin-right:0.21rem;margin-bottom:0.08rem; }
+.repeatsend{display: inline-block;
+    width:2.553rem;height:0.8rem;line-height:0.8rem;border-radius:0.106rem;border:0.013rem solid #1890FF;vertical-align: middle;margin-left:0.2rem;
+font-size:13px;text-align: center;}
+[data-dpr="2"] .repeatsend{font-size:26px;}
+[data-dpr="3"] .repeatsend{font-size:39px;}
+/*验证码错误*/
+.virificationError{width:10rem;text-align: center;position: fixed;top:50%;margin-top:-0.6rem;}
+.virificationError a{display: inline-block;font-size:15px;width:2.99rem;height:1.2rem;line-height: 1.2rem;text-align:center;color:#fff;border-radius:0.213rem;background: #000000;opacity: 0.64;
+ }
+[data-dpr="2"] .virificationError a{font-size:30px;}
+[data-dpr="3"] .virificationError a{font-size:45px;}
+/*选择银行卡*/
+.chioseCardBox{width:10rem;overflow-y: scroll;background: #000000;background: rgba(0,0,0,0.64);height:85%;position: fixed;top:3rem;font-size:15px;margin-top:0.0853rem;}
+[data-dpr="2"] .chioseCardBox{font-size:30px;}
+[data-dpr="3"] .chioseCardBox{font-size:45px;}
+.chioseCardBox ul{}
+.chioseCardBox ul li{height:1.36rem;line-height:1.36rem;background: #fff;  border-bottom:0.013rem solid #dddddd;}
+.chioseCardBox ul li span{height:1.36rem;width:4.587rem;padding-left:0.4rem;
+    position: relative;  display: inline-block;border-left:0.013rem solid #dddddd;}
+.carChioedIcon{position: absolute;display: inline-block;width:0.42rem;height:0.42rem;background: url("../images/icon_blue_bg_checked@2x.png") no-repeat;
+background-size: 100%;right:0;top:0;}
+
+.cards_left{width:8rem;height:100%;float:left;}
+/*收银台页面-------------------------------------------------*/
+
+/*foter*/
+.selBtn{width:10rem;}
+.noSelBtn,.yesSelBtn{width:10rem;height:1.3rem;line-height: 1.3rem;text-align: center;color: #fff;font-size: 15px;
+    position: fixed;bottom: 0; z-index: 999}
+[data-dpr="2"] .noSelBtn,[data-dpr="2"] .yesSelBtn{font-size:30px;}
+[data-dpr="3"] .noSelBtn,[data-dpr="3"] .yesSelBtn{font-size:45px;}
+.noSelBtn{background: #B6BABD;}
+.yesSelBtn{background: #1890FF;}
+.yesSelBtn span{font-size:12px;}
+[data-dpr="2"] .yesSelBtn span{font-size:24px;}
+[data-dpr="3"] .yesSelBtn span{font-size:36px;}
+.counPrice{font-size:18px;}
+[data-dpr="2"] .counPrice{font-size:36px;}
+[data-dpr="3"] .counPrice{font-size:54px;}
+/*订单展示*/
+.chout_order{width:10rem;background: #fff;}
+.chout_order li{border-bottom:0.013rem solid #dddddd;width:10rem;text-align: center;}
+.chout_order li{color:#999999;font-size:13px;}
+.orderShow p:nth-child(1){padding-top:0.42rem;}
+[data-dpr="2"] .chout_order li{font-size:26px;}
+[data-dpr="3"] .chout_order li{font-size:39px;}
+.orderShow_num{color:#FF712E ;font-size:14px;}
+[data-dpr="2"] .orderShow_num{font-size:28px;}
+[data-dpr="3"] .orderShow_num{font-size:42px;}
+.orderShow_num i{font-size:24px}
+[data-dpr="2"] .orderShow_num i{font-size:48px}
+[data-dpr="3"] .orderShow_num i{font-size:72px}
+.payremain{display: inline-block;width:4.6rem;height:0.667rem;line-height:0.667rem;background: #F2F4F7;color:#9BA2AD;border-radius:0.333rem;
+margin-top:0.293rem;margin-bottom:0.43rem;}
+/*order detail*/
+.chout_order li.orderDetail{padding:0.32rem 0;text-align: left;}
+.orderDetail p:nth-child(1) span{margin-left:0.4rem;}
+.orderDetail p:nth-child(1){color:#333333;}
+.orderDetail p:nth-child(2){color:#999999;overflow: hidden;margin-top:0.12rem;}
+.orderDetail p:nth-child(2) span:nth-child(1){float:left;margin-left:0.4rem;}
+.orderDetail p:nth-child(2) span:nth-child(2){float:right;margin-right:0.4rem;}
+
+.pay_tit{height:1.173rem;line-height: 1.4173rem;width:9.6rem;padding-left:0.4rem;color:#999999;font-size:13px;}
+[data-dpr="2"] .pay_tit{font-size:26px;}
+[data-dpr="3"] .pay_tit{font-size:39px;}
+
+/*paylist*/
+.payItem{padding:0.4rem;padding-left:0;background: #fff;width: 10rem;border-bottom:0.013rem solid #dddddd;border-top:0.013rem solid #dddddd;margin-bottom: 0.32rem;}
+.payItem li{width: 9.6rem;padding-left:0.4rem;}
+.payItem li:nth-child(1){position: relative;}
+.payItem li>span{float:left;}
+.payItem li>span:nth-child(2){margin-left:0.2rem;color:#333333;font-size:15px; }
+[data-dpr="2"] .payItem li>span:nth-child(2){font-size:30px;}
+[data-dpr="3"] .payItem li>span:nth-child(2){font-size:45px;}
+.payItem li>span:nth-child(2) p:nth-child(2){color:#3F3F3F;font-size:12px;}
+[data-dpr="2"] .payItem li>span:nth-child(2) p:nth-child(2){font-size:24px;}
+[data-dpr="3"] .payItem li>span:nth-child(2) p:nth-child(2){font-size:36px;}
+.payItem li>span:nth-child(3){float:right;margin-right:0.4rem;}
+.paychoisedIcon{display: inline-block;width:0.533rem;height:0.533rem;background: url("../images/icon_circle_checked@2x.png") no-repeat;
+background-size:100%;vertical-align: middle;}
+.paychoiseIcon{display: inline-block;width:0.533rem;height:0.533rem;background: url("../images/icon_circle_uncheck@2x.png") no-repeat;
+    background-size:100%;vertical-align: middle;}
+.smallIcon1{display: inline-block;width:0.8rem;height:0.533rem;background: url("../images/icon_yuqianPay@2x.png") no-repeat;
+    background-size: 100%;margin-top:0.1rem;}
+.smallIcon2{display: inline-block;width:0.8rem;height:0.533rem;background: url("../images/icon_baPay@2x.png") no-repeat;
+    background-size: 100%;margin-top:0.1rem;}
+.smallIcon3{display: inline-block;width:0.8rem;height:0.533rem;background: url("../images/icon_unionPay@2x.png") no-repeat;
+    background-size: 100%;margin-top:0.1rem;}
+.smallIcon4{display: inline-block;width:0.8rem;height:0.533rem;background: url("../images/icon_aliPay@2x.png") no-repeat;
+    background-size: 100%;margin-top:0.1rem;}
+.payInp{height:1.093rem;line-height: 1.093rem; width:8.25rem;background: #F0F3F5 ;border-radius:0.1rem;margin-top:0.32rem;
+margin-left:0.946rem;}
+.payInp span{margin-left:0.32rem;}
+.payInp input{border:none;height:1.093rem;line-height: 1.093rem;margin-left:0.1rem;width:5rem;background:#F0F3F5;font-size:13px;
+}
+[data-dpr="2"] .payInp input{font-size:26px;}
+[data-dpr="3"] .payInp input{font-size:39px;}
+/*快捷支付*/
+.fastPayIter{border-top:0.0103rem solid #9BA2AD;padding-top:0.42rem;color:#999999;font-size:13px;margin-top:0.32rem;}
+[data-dpr="2"] .fastPayIter{font-size:26px;}
+[data-dpr="3"] .fastPayIter{font-size:39px;}
+.fastPayIter>span:nth-child(1){margin-left:0.946rem;}
+.fastPayIter>span:nth-child(2){float:right;margin-right:0.4rem;}
+.fastPayIter>span p:nth-child(1){color:#333333;font-size:15px;}
+[data-dpr="2"] .fastPayIter span p:nth-child(1){font-size:30px;}
+[data-dpr="3"] .fastPayIter span p:nth-child(1){font-size:45px;}
+.changeCardBtn{color:#999999;font-size:13px;margin-top:0.14rem;}
+[data-dpr="2"] .changeCardBtn{font-size:26px;}
+[data-dpr="3"] .changeCardBtn{font-size:39px;}
+.chanCaIcon{display: inline-block;width:0.21rem;height:0.373rem;background: url("../images/icon_arrow_right_lighten@2x.png") no-repeat;
+background-size: 100% 100%;vertical-align: middle;margin-left:0.2rem;margin-bottom:0.1rem;}
+.blank_40{height:3rem;background: #f2f4f7;}
+.payItem:nth-child(4){border-bottom: 0;padding-bottom: 0.2rem;}
+.descriptionIcon{display: inline-block;width:0.48rem;height:0.48rem;background: url("../images/icon_question@2x.png") no-repeat;
+    background-size: 100%;vertical-align: middle;margin-left:0.1rem;}
+/*dialog*/
+.descDialog{width:4rem;height:4rem;background: #fff;border-radius:0.2rem;position: absolute;border:1px solid #ccc;left:4.8rem;top:1rem;padding:0.2rem;
+z-index: 99;
+}
+.clearfix{clear:both;}
+/*选择银行卡弹层*/
+.chose_cards,.tip_mask{
+    background: rgba(0,0,0,0.4);
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right:0;
+    z-index: 999;
+}
+.chose_border{
+    position: absolute;
+    bottom: 0;
+    width:100%;
+    height:60%;
+    background: #fff;
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+}
+.bor_wai{
+    max-height: 9rem;
+    overflow-y: scroll;
+    -webkit-overflow-scrolling : touch;
+}
+.bor_header{
+    width:100%;
+    line-height: 1.5rem;
+    text-align: center;
+    color: #333333;
+    background: url("resource/images/icon_dialog_close@2x.png") no-repeat center right;
+    background-size: 0.3946666rem 0.3946666rem;
+    background-position: center right 0.5rem;
+    font-size:15px;
+}
+[data-dpr="2"] .bor_header{font-size:30px;}
+[data-dpr="3"] .bor_header{font-size:45px;}
+.cards_add{
+    padding-left: 0.3rem;
+    border-top:1px solid #F5F6F8;
+    line-height: 1.5rem;
+    color: #4A4A4A;
+    background: url("resource/images/icon_arrow_right_lighten@2x.png") no-repeat center right;
+    background-position: center right 0.5rem;
+    background-size:0.26875rem 0.46875rem ;
+    font-size:15px;
+}
+[data-dpr="2"] .cards_add{font-size:30px;}
+[data-dpr="3"] .cards_add{font-size:45px;}
+.cards_add img{
+    width:1rem;
+    height:1rem;
+    vertical-align: middle;
+    margin-right: 0.3rem;
+}
+.cards_list{
+    height:1.8rem;
+    padding-left: 0.3rem;
+    border-top:1px solid #F5F6F8;
+    color: #333333;
+    overflow: hidden;
+}
+.cards_list img{
+    float: left;
+    width:1rem;
+    height:1rem;
+    margin-top: 0.2rem;
+    margin-right: 0.3rem;
+}
+.cardDetails{
+    float: left;
+    height:1.5rem;
+}
+.cardName{
+    margin-top: 0.2rem;
+    font-size:15px;
+}
+
+[data-dpr="2"] .cardName{font-size:30px;}
+[data-dpr="3"] .cardName{font-size:45px;}
+.userName{
+    color: #999999;
+    margin-top: 0.2rem;
+    font-size:12px;
+}
+[data-dpr="2"] .userName{font-size:24px;}
+[data-dpr="3"] .userName{font-size:36px;}
+
+.inp_cards{
+    display: block;
+    float: right;
+    margin-right: 0.4rem;
+    margin-top: 0.5rem;
+    border: none;
+    outline: none;
+    -webkit-appearance: none;
+}
+
+.cards_list input[type="radio"] {
+    vertical-align: middle;
+    -webkit-appearance: none;
+    background: url("../../resource/images/icon_circle_uncheck@2x.png") no-repeat center center;
+    background-size:100% 100%;
+    width:0.5rem;
+    height:0.5rem;
+    border:none;
+    outline:none;
+}
+.cards_list input[type="radio"]:checked{
+    vertical-align: middle;
+    background: url("../../resource/images/icon_circle_checked@2x.png") no-repeat center center;
+    background-size:100% 100%;
+}
+/*鱼钱宝支付勾选后说明弹层*/
+
+.tip_border{
+    position: absolute;
+    bottom: 0;
+    width:100%;
+    height:45%;
+    background: #fff;
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+}
+.tip_wai{
+    height: 5.5rem;
+    max-height: 5.5rem;
+    overflow-y: scroll;
+    padding:0.5rem 0.5rem 0 0.5rem;
+}
+.tip_wai div{
+    color: #333333;
+    margin-bottom: 0.3rem;
+    font-size:15px;
+}
+[data-dpr="2"]  .tip_wai div{font-size:30px;}
+[data-dpr="3"]  .tip_wai div{font-size:45px;}
+.know{
+    text-align: center;
+    margin-top: 0.5rem;
+}
+.know span{
+    padding: 0.3rem 3.8rem;
+    background: #1890FF;
+    color:#FFF;
+    display: inline-block;
+    border-radius: 0.15rem;
+    font-size:15px;
+
+}
+[data-dpr="2"]  .know span{font-size:30px;}
+[data-dpr="3"]  .know span{font-size:45px;}
+/*---------------支付密码支付页面 syt1--------------------*/
+.page_syt1{
+    background: #F2F4F7;
+}
+.orderNum{
+    background: #FFF;
+}
+.orderMoney{
+    color:#999;
+    text-align: center;
+    padding:0.5rem 0 0.8rem 0;
+    border-bottom: 1px solid #E7E7E7;
+    font-size:13px;
+}
+[data-dpr="2"]  .ord_1{font-size:26px;}
+[data-dpr="3"]  .ord_1{font-size:39px;}
+.ord_1 span{
+    color: #FF712E;
+    padding-left: 0.2rem;
+    font-size:24px;
+}
+[data-dpr="2"]  .ord_1 span i{font-size:48px;}
+[data-dpr="3"]  .ord_1 span i{font-size:72px;}
+.ord_yu{
+    margin-top: 0.3rem;
+    font-size:13px;
+}
+[data-dpr="2"]  .ord_yu{font-size:26px;}
+[data-dpr="3"]  .ord_yu{font-size:39px;}
+.ord_sy{
+    color:#999;
+    margin-top: 0.5rem;
+    font-size:12px;
+}
+[data-dpr="2"]  .ord_sy{font-size:24px;}
+[data-dpr="3"]  .ord_sy{font-size:36px;}
+.ord_sy span{
+    padding:0.2rem 0.3rem;
+    background: #F2F4F7;
+    border-radius: 0.5rem;
+}
+.ord_sy span i{
+    color: #FF712E;
+}
+.orderSty{
+    padding:0.5rem 0.3rem;
+}
+.sty_1{
+    color:#333;
+    font-size:14px;
+}
+[data-dpr="2"]  .sty_1{font-size:28px;}
+[data-dpr="3"]  .sty_1{font-size:42px;}
+.sty_2{
+    color:#999;
+    overflow: hidden;
+    margin-top: 0.3rem;
+    font-size: 13px;
+}
+[data-dpr="2"]  .sty_2{font-size:26px;}
+[data-dpr="3"]  .sty_2{font-size:39px;}
+.sty_2 span:first-child{
+    float: left;
+}
+.sty_2 span:last-child{
+    float: right;
+}
+.yuPay{
+    margin-top: 0.5rem;
+    background: #fff;
+    padding:0 0.3rem;
+}
+.pay_1{
+    color: #3F3F3F;
+    padding:0.3rem 0;
+    font-size:15px;
+}
+[data-dpr="2"]  .pay_1{font-size:30px;}
+[data-dpr="3"]  .pay_1{font-size:45px;}
+.pay_1 span{
+    color:#999;
+    font-size:12px;
+}
+[data-dpr="2"]  .pay_1 span{font-size:24px;}
+[data-dpr="3"]  .pay_1 span{font-size:36px;}
+.inp_scanf{
+    width:9.2rem;
+    height:1.6rem;
+    background: #F0F3F5;
+    border-radius:0.15rem;
+    color: #B3B3B9;
+    border:0;
+    padding-left: 0.3rem;
+    font-size:20px;
+}
+[data-dpr="2"]  .inp_scanf{font-size:40px;}
+[data-dpr="3"]  .inp_scanf{font-size:60px;}
+.pay_error{
+    color: #FF712E;
+    padding:0.2rem 0;
+    font-size:12px;
+}
+[data-dpr="2"]  .pay_error{font-size:24px;}
+[data-dpr="3"]  .pay_error{font-size:36px;}
+
+.pay_again{
+    text-align: center;
+    margin-top:1rem;
+}
+.conf_btn{
+    text-align: center;
+    display: inline-block;
+    width: 8.72rem;
+    height: 1.173rem;
+    line-height: 1.173rem;
+    border-radius: 0.1rem;
+    background: #18A0FF;
+    color: #fff;
+    font-size:14px;
+}
+[data-dpr="2"]  .conf_btn{font-size:28px;}
+[data-dpr="3"]  .conf_btn{font-size:42px;}
+
+[data-dpr="2"]  .conf_btn span{font-size:24px;}
+[data-dpr="3"]  .conf_btn span{font-size:36px;}
+
+[data-dpr="2"]  .conf_btn span i{font-size:36px;}
+[data-dpr="3"]  .conf_btn span i{font-size:54px;}
+.cho_btn{
+    text-align: center;
+    display: inline-block;
+    width: 8.72rem;
+    height: 1.173rem;
+    line-height: 1.173rem;
+    color: #18A0FF;
+    margin-top: 0.3rem;
+    font-size: 15px;
+}
+[data-dpr="2"]  .cho_btn{font-size:30px;}
+[data-dpr="3"]  .cho_btn{font-size:45px;}
+/*-----------------------------syt------------------------------*/
+.syt{
+    background: #F2F4F7;
+}
+.ord_2{
+    color:#FF712E;;
+    margin-top: 0.5rem;
+    font-size:14px;
+}
+[data-dpr="2"]  .ord_2{font-size:24px;}
+[data-dpr="3"]  .ord_2{font-size:36px;}
+.ord_2 span{
+    padding:0.2rem 0.3rem;
+    background: #FFF6F1;
+    border-radius: 0.5rem;
+}
+.zhif{
+    text-align: center;
+    margin-top:1rem;
+}
+.pay_btn{
+    text-align: center;
+    display: inline-block;
+    width: 8.72rem;
+    height: 1.173rem;
+    line-height: 1.173rem;
+    border-radius: 0.1rem;
+    background: #18A0FF;
+    color: #fff;
+    font-size:14px;
+}
+[data-dpr="2"]  .pay_btn{font-size:28px;}
+[data-dpr="3"]  .pay_btn{font-size:42px;}

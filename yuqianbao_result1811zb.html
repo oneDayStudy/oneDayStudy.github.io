@@ -1,0 +1,71 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="yes" name="apple-touch-fullscreen">
+    <meta content="telephone=no,email=no" name="format-detection">
+    <script src="./resource/lib-flexible-master/build/flexible_css.js"></script>
+    <script src="./resource/lib-flexible-master/build/flexible.js"></script>
+    <link type="text/css" rel="stylesheet" href="./resource/css/global.css">
+	<link type="text/css" rel="stylesheet" href="./resource/css/yuqiabao1811zb.css">
+    <title>首页</title>
+</head>
+<body>
+        <div class="pageWrap">
+        	<div class="header_tit">
+				<span class="returnBtn"></span>
+				支付结果
+        	</div>
+          <!--失败结果-->
+			<div class="payResult_error" style="display: block;">
+				<div class="paybox">
+					<p><img src="./resource/images/icon_payResult_fail@2x.png" alt=""></p>
+					<p><span class="error_pay">支付失败</span></p>
+				</div>
+				<div class="y_btn">
+					<a href="javascript:;" class="repeat_pay">重新支付</a>
+				</div>
+			</div>
+			<!--成功结果-->
+			<div class="payResult_success" style="display: none">
+				<div class="paybox">
+					<p><img src="./resource/images/icon_payResult_sucess@2x.png" alt=""></p>
+					<p><span class="success_pay">支付成功</span></p>
+					<p class="pay_num">￥<span>2000</span> .00</p>
+				</div>
+				<div class="pay_footer">
+					<p>
+						<span>6</span>秒后自动跳转
+					</p>
+					<p>
+						<a href="javascript:;" class="turningBtn">立即跳转</a>
+					</p>
+				</div>
+			</div>
+        </div>
+        <style>
+            .swiper-container-free-mode>.swiper-wrapper {
+                -webkit-transition-timing-function: linear; /*之前是ease-out*/
+                -moz-transition-timing-function: linear;
+                -ms-transition-timing-function: linear;
+                -o-transition-timing-function: linear;
+                transition-timing-function: linear;
+                margin: 0 auto;
+            }
+        </style>
+  <script type="text/javascript" src="./resource/javascript/jquery.min.js"></script>
+   <script type="text/javascript" src="./resource/javascript/global.js"></script>
+  <!--2017/04/21新增js-->
+  <script type="text/javascript">
+
+     $(function(){
+//      btn
+		 $(".repeat_pay").on("click",function(){
+			 $(location).attr("href","yuqianbao_choutCount.html")
+		 })
+     })
+
+  </script>
+</body>
+</html>

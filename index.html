@@ -1,0 +1,91 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="yes" name="apple-touch-fullscreen">
+    <meta content="telephone=no,email=no" name="format-detection">
+    <script src="./resource/lib-flexible-master/build/flexible_css.js"></script>
+    <script src="./resource/lib-flexible-master/build/flexible.js"></script>
+    <link type="text/css" rel="stylesheet" href="./resource/css/global.css">
+	<link type="text/css" rel="stylesheet" href="./resource/css/yuqiabao1811zb.css">
+    <title>首页</title>
+</head>
+<body>
+        <div class="pageWrap">
+        	<div class="header_tit">
+				<span class="returnBtn"></span>
+				鱼钱宝
+        	</div>
+
+          <!--nav-->
+			<div class="y_nav">
+				<img src="./resource/images/logo@2x.png" alt="">
+			</div>
+          	
+           <!--input-list-->
+			<div class="y_inp">
+				<div class="inp_list">
+					<input type="text" placeholder="请输入用户名">
+					<i class="errorIcon"></i>
+				</div>
+				<div class="inp_list">
+					<input type="password" class="mima_dd" placeholder="请输入密码">
+					<input type="text" class="mima_wz" placeholder="请输入密码" style="display:none;">
+					<i class="errorIcon"></i>
+					<i class="eyeIcon" data-show="1"></i>
+				</div>
+			</div>
+           <!--btn-->
+			<div class="y_btn">
+				<a href="javascript:;" class="signBtn">登录</a>
+			</div>
+        </div>
+
+  <script type="text/javascript" src="./resource/javascript/jquery.min.js"></script>
+   <script type="text/javascript" src="./resource/javascript/global.js"></script>
+  <!--2017/04/21新增js-->
+  <script type="text/javascript">
+
+     $(function(){
+//      sign btn
+		 var sign=true
+		 if(1){//匹配成功登陆
+			 sign =true
+		 }
+     	if(sign){
+			$(".signBtn").on('click',function(){
+				$(location).attr('href', 'yuqianbao_choutCount.html');
+			})
+		}
+
+		$(".errorIcon").on("click",function(){
+			$(this).parents(".inp_list").find("input").val("")
+		})
+//		 $(".inp_list").on("click",".eyeIcon",function(){
+//			 console.log( $(this).prevAll("input").attr("type"))
+//			 $(this).prevAll("input").attr("type","")
+//		 })
+		 $(".eyeIcon").on("click",function(){
+			 //明文
+			 if($(this).attr("data-show")==1){
+				 $(this).attr("data-show","2");
+				 $(this).parents(".inp_list").find("input.mima_dd").hide()
+				 $(this).parents(".inp_list").find("input.mima_wz").show()
+				 $(this).parents(".inp_list").find("input.mima_wz").val($(this).parents(".inp_list").find("input.mima_dd").val())
+					return
+			 }
+				// 密文
+			 if($(this).attr("data-show")==2){
+				 $(this).attr("data-show","1");
+				 $(this).parents(".inp_list").find("input.mima_wz").hide()
+				 $(this).parents(".inp_list").find("input.mima_dd").show()
+				 $(this).parents(".inp_list").find("input.mima_dd").val($(this).parents(".inp_list").find("input.mima_wz").val())
+				 return
+			 }
+		 })
+     })
+
+  </script>
+</body>
+</html>
