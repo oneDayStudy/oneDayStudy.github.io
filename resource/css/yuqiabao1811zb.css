@@ -26,13 +26,15 @@ background-size:100% }
 /*input list*/
 .y_inp{  width: 100%;margin-top:1.12rem;}
 .inp_list{width:8.72rem;height:1.006rem;border-bottom:1px solid #E0E0E0;margin:0 auto;position: relative; }
-.inp_list input{height:100%;width:6.72rem;font-size: 14px;border: none;color:#B6B6B9;}
+.inp_list input{height:100%;width:6.72rem;font-size: 14px;border: none;color:#333333;}
 [data-dpr="2"] .inp_list input{font-size:28px}
 [data-dpr="3"] .inp_list input{font-size:42px}
 .errorIcon{display: inline-block;width:0.426rem;height:0.426rem;background: url("../images/public_input_cleanText_icon@2x.png") no-repeat;
 background-size:100%;position:absolute;right:0;top:0.32rem;}
 .inp_list:nth-child(2){margin-top:0.64rem;}
-.eyeIcon{display: inline-block;width:0.56rem;height:0.3rem;background: url("../images/icon_eye_open@2x.png") no-repeat;
+.eyeIcon{display: inline-block;width:0.56rem;height:0.42rem;background: url("../images/icon_eye_hidden@2x.png") no-repeat;
+    background-size:100%;position:absolute;right:0.88rem;top:0.32rem;}
+.eyeIcon2{display: inline-block;width:0.56rem;height:0.42rem;background: url("../images/icon_eye_open@2x.png") no-repeat;
     background-size:100%;position:absolute;right:0.88rem;top:0.32rem;}
 /*button*/
 .y_btn{width:100%;text-align: center;font-size:14px;margin-top:1.253rem;}
@@ -70,10 +72,14 @@ border-radius:0.1rem;background: #18A0FF ;color:#fff;}
 
 .cardPage{height:100%;width:10rem;background: #f2f4f7;overflow-x:hidden;}
 .cardlist{background: #f2f4f7;}
-.addcard_footer{width:10rem;height:1.3rem;background: #1890FF;line-height: 1.3rem;text-align: center;color: #fff;font-size: 15px;
+.addcard_footer{width:10rem;height:1.3rem;background: #B6BABD;line-height: 1.3rem;text-align: center;color: #fff;font-size: 15px;
 position: fixed;bottom: 0;}
+.addcard_footerN{width:10rem;height:1.3rem;background: #1890FF;line-height: 1.3rem;text-align: center;color: #fff;font-size: 15px;
+    position: fixed;bottom: 0;}
 [data-dpr="2"] .addcard_footer{font-size: 30px;}
 [data-dpr="3"] .addcard_footer{font-size: 45px;}
+[data-dpr="2"] .addcard_footerN{font-size: 30px;}
+[data-dpr="3"] .addcard_footerN{font-size: 45px;}
 
 .cardlist ul{ border-top:0.013rem solid #dddddd;margin-top:0.533rem;}
 .cardlist ul li{height:1.36rem;line-height: 1.36rem;width: 10rem;background: #fff;color: #333333;font-size: 15px;
@@ -88,8 +94,8 @@ position: fixed;bottom: 0;}
 
 .car_card input{height:0.8rem;margin-right:0.1rem; text-align: right;border:none;}
 
-.chioseIcon{display: inline-block;width:0.3733rem;height:0.21333rem;background: url("../images/icon_arrow_down@2x.png") no-repeat;background-size:100%;margin-left:0.2rem; }
-.chioseIcon2{display: inline-block;width:0.21333rem;height:0.37333rem;background: url("../images/icon_arrow_right_lighten@2x.png") no-repeat;background-size:100%;
+.chioseIcon2{display: inline-block;width:0.3733rem;height:0.21333rem;background: url("../images/icon_arrow_down@2x.png") no-repeat;background-size:100%;margin-left:0.2rem; }
+.chioseIcon{display: inline-block;width:0.21333rem;height:0.37333rem;background: url("../images/icon_arrow_right_lighten@2x.png") no-repeat;background-size:100%;
     padding-bottom: 0.1rem;margin-left:0.36rem;
     vertical-align: middle;}
 .readover{color: #1890FF;font-size:15px;margin-top:0.4rem;line-height: 0.56rem;}
@@ -99,7 +105,7 @@ position: fixed;bottom: 0;}
     background-size:100%;vertical-align: middle;margin-left:0.4rem;margin-right:0.21rem;margin-bottom:0.08rem; }
 .readchoisedIcon{display: inline-block;width:0.426rem;height:0.426rem;background: url("../images/icon_circle_checked@2x.png") no-repeat;
     background-size:100%;vertical-align: middle;margin-left:0.4rem;margin-right:0.21rem;margin-bottom:0.08rem; }
-.repeatsend{display: inline-block;
+.repeatsend{display: inline-block;color:#1890FF;
     width:2.553rem;height:0.8rem;line-height:0.8rem;border-radius:0.106rem;border:0.013rem solid #1890FF;vertical-align: middle;margin-left:0.2rem;
 font-size:13px;text-align: center;}
 [data-dpr="2"] .repeatsend{font-size:26px;}
@@ -115,15 +121,20 @@ font-size:13px;text-align: center;}
 [data-dpr="2"] .chioseCardBox{font-size:30px;}
 [data-dpr="3"] .chioseCardBox{font-size:45px;}
 .chioseCardBox ul{}
-.chioseCardBox ul li{height:1.36rem;line-height:1.36rem;background: #fff;  border-bottom:0.013rem solid #dddddd;}
-.chioseCardBox ul li span{height:1.36rem;width:4.587rem;padding-left:0.4rem;
-    position: relative;  display: inline-block;border-left:0.013rem solid #dddddd;}
+.chioseCardBox ul li{height:1.36rem;line-height:1.36rem;background: #fff;  border-bottom:0.013rem solid #dddddd;width:10rem;overflow: hidden;}
+.chioseCardBox ul li span:nth-child(1){height:1.36rem;width:4.387rem;padding-left:0.4rem;
+    position: relative;display: inline-block;border-left:0.013rem solid #dddddd;float: left;}
+.chioseCardBox ul li span:nth-child(2){
+    height:1.36rem;width:4.67rem;padding-left:0.4rem;
+    position: relative;display: inline-block;border-left:0.013rem solid #dddddd;float: left;
+}
 .carChioedIcon{position: absolute;display: inline-block;width:0.42rem;height:0.42rem;background: url("../images/icon_blue_bg_checked@2x.png") no-repeat;
 background-size: 100%;right:0;top:0;}
-
 .cards_left{width:8rem;height:100%;float:left;}
+/*银行列表*/
+.carListTable td{width:50%;height:1rem;background: #fff;padding-left:0.4rem;position: relative;border:0.023rem solid #e0e0e0;}
+.carListTable tr td:nth-child(n){border-left:none;}
 /*收银台页面-------------------------------------------------*/
-
 /*foter*/
 .selBtn{width:10rem;}
 .noSelBtn,.yesSelBtn{width:10rem;height:1.3rem;line-height: 1.3rem;text-align: center;color: #fff;font-size: 15px;
@@ -151,7 +162,7 @@ background-size: 100%;right:0;top:0;}
 .orderShow_num i{font-size:24px}
 [data-dpr="2"] .orderShow_num i{font-size:48px}
 [data-dpr="3"] .orderShow_num i{font-size:72px}
-.payremain{display: inline-block;width:4.6rem;height:0.667rem;line-height:0.667rem;background: #F2F4F7;color:#9BA2AD;border-radius:0.333rem;
+.payremain{display: inline-block;width:5.6rem;height:0.667rem;line-height:0.667rem;background: #F2F4F7;color:#9BA2AD;border-radius:0.333rem;
 margin-top:0.293rem;margin-bottom:0.43rem;}
 /*order detail*/
 .chout_order li.orderDetail{padding:0.32rem 0;text-align: left;}
@@ -170,13 +181,16 @@ margin-top:0.293rem;margin-bottom:0.43rem;}
 .payItem li{width: 9.6rem;padding-left:0.4rem;}
 .payItem li:nth-child(1){position: relative;}
 .payItem li>span{float:left;}
-.payItem li>span:nth-child(2){margin-left:0.2rem;color:#333333;font-size:15px; }
+.payItem li>span:nth-child(2){margin-left:0.2rem;color:#333;font-size:15px; }
 [data-dpr="2"] .payItem li>span:nth-child(2){font-size:30px;}
 [data-dpr="3"] .payItem li>span:nth-child(2){font-size:45px;}
 .payItem li>span:nth-child(2) p:nth-child(2){color:#3F3F3F;font-size:12px;}
 [data-dpr="2"] .payItem li>span:nth-child(2) p:nth-child(2){font-size:24px;}
 [data-dpr="3"] .payItem li>span:nth-child(2) p:nth-child(2){font-size:36px;}
 .payItem li>span:nth-child(3){float:right;margin-right:0.4rem;}
+.changeCardBtn{color:#999!important;font-size:13px;}
+[data-dpr="2"] .changeCardBtn{color:#999!important;font-size:26px;}
+[data-dpr="2"] .changeCardBtn{color:#999!important;font-size:39px;}
 .paychoisedIcon{display: inline-block;width:0.533rem;height:0.533rem;background: url("../images/icon_circle_checked@2x.png") no-repeat;
 background-size:100%;vertical-align: middle;}
 .paychoiseIcon{display: inline-block;width:0.533rem;height:0.533rem;background: url("../images/icon_circle_uncheck@2x.png") no-repeat;
@@ -197,7 +211,7 @@ margin-left:0.946rem;}
 [data-dpr="2"] .payInp input{font-size:26px;}
 [data-dpr="3"] .payInp input{font-size:39px;}
 /*快捷支付*/
-.fastPayIter{border-top:0.0103rem solid #9BA2AD;padding-top:0.42rem;color:#999999;font-size:13px;margin-top:0.32rem;}
+.fastPayIter{border-top:0.0103rem solid #e0e0e0;padding-top:0.42rem;color:#999999;font-size:13px;margin-top:0.32rem;}
 [data-dpr="2"] .fastPayIter{font-size:26px;}
 [data-dpr="3"] .fastPayIter{font-size:39px;}
 .fastPayIter>span:nth-child(1){margin-left:0.946rem;}
@@ -237,7 +251,12 @@ z-index: 99;
     background: #fff;
     border-top-left-radius: 0.5rem;
     border-top-right-radius: 0.5rem;
+    padding-bottom:1.2rem;
 }
+.entryYzm{
+    width:8rem;
+}
+.entryYzm input{width:5rem;}
 .bor_wai{
     max-height: 9rem;
     overflow-y: scroll;
@@ -336,6 +355,7 @@ z-index: 99;
 .tip_border{
     position: absolute;
     bottom: 0;
+    padding-bottom:1.26rem;
     width:100%;
     height:45%;
     background: #fff;

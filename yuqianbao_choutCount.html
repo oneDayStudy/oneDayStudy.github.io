@@ -40,7 +40,7 @@
 				<!--pay list-->
 				<div class="payList">
 					<ul class="payItem">
-						<li class="">
+						<li class="yqbPayLi">
 							<span><i class="smallIcon1"></i></span>
 							<span>
 								<p class="yqb_overage">鱼钱宝余额：<span>90990</span>元</p>
@@ -59,7 +59,7 @@
 
 					</ul>
 					<ul class="payItem">
-						<li class="">
+						<li class="xybPayLi">
 							<span><i class="smallIcon2"></i></span>
 							<span>
 								<p class="xyb_overage">小八信用宝可用额度：<span>900990</span>元</p>
@@ -78,7 +78,7 @@
 
 					</ul>
 					<ul class="payItem">
-						<li class="">
+						<li class="kjPayLi">
 							<span><i class="smallIcon3"></i></span>
 							<span>
 								<p>快捷支付</p>
@@ -103,10 +103,10 @@
 						</li>
 					</ul>
 					<ul class="payItem">
-						<li class="">
+						<li class="zbfPayLi">
 							<span><i class="smallIcon4"></i></span>
 							<span>
-								<p>快捷支付</p>
+								<p>支付宝支付</p>
 								<p>需额外收取千分之四手续费 <i class="descriptionIcon"></i></p>
 							</span>
 							<span><i class="paychoiseIcon zfbPay"></i></span>
@@ -275,25 +275,25 @@ $(function(){
 					}
 				})
 //	yqbPay,xybPay,klPay,zfbPay
-	$(".yqbPay").on("click",function(){
+	$(".yqbPayLi").on("click",function(){
 		if(!$(".yqbVal").val()&&!$(".xybVal").val()){
 			$(".yesSelBtn").hide()
 			$(".noSelBtn").show()
 		}
-		if($(this).hasClass("paychoisedIcon")){
-			$(this).addClass("paychoiseIcon").removeClass("paychoisedIcon")
-			$(this).parents(".payItem").find(".payInpIter").hide()
+		if($(this).find(".yqbPay").hasClass("paychoisedIcon")){
+			$(this).find(".yqbPay").addClass("paychoiseIcon").removeClass("paychoisedIcon")
+			$(this).find(".yqbPay").parents(".payItem").find(".payInpIter").hide()
 			$(".yqbVal").val("")//取消选择清除值
 			$(".yqb_overage span").text(yqb_price)
 		}else{
-			$(this).addClass("paychoisedIcon").removeClass("paychoiseIcon")
-			$(this).parents(".payItem").find(".payInpIter").show()
+			$(this).find(".yqbPay").addClass("paychoisedIcon").removeClass("paychoiseIcon")
+			$(this).find(".yqbPay").parents(".payItem").find(".payInpIter").show()
 			//另外两种选择取消
 			$(".kjPay").addClass("paychoiseIcon").removeClass("paychoisedIcon")
 			$(".zfbPay").addClass("paychoiseIcon").removeClass("paychoisedIcon")
 			$(".yqbVal").val("")//清值
 		}
-		if($(this).hasClass("paychoisedIcon")||$(".xybPay").hasClass("paychoisedIcon")){
+		if($(this).find(".yqbPay").hasClass("paychoisedIcon")||$(".xybPay").hasClass("paychoisedIcon")){
 			$(".yqbVal").on("input propertychange",function(){
 				if($(".yqbVal").val()||$(".xybVal").val()){
 					$(".yesSelBtn").show()
@@ -309,19 +309,19 @@ $(function(){
 		}
 	})
 //xyb paybtn ----------------------
-	$(".xybPay").on("click",function(){
+	$(".xybPayLi").on("click",function(){
 		if(!$(".xybVal").val()&&!$(".yqbVal").val()){
 			$(".yesSelBtn").hide()
 			$(".noSelBtn").show()
 		}
-		if($(this).hasClass("paychoisedIcon")){
-			$(this).addClass("paychoiseIcon").removeClass("paychoisedIcon")
-				$(this).parents(".payItem").find(".payInpIter").hide()
+		if($(this).find(".xybPay").hasClass("paychoisedIcon")){
+			$(this).find(".xybPay").addClass("paychoiseIcon").removeClass("paychoisedIcon")
+				$(this).find(".xybPay").parents(".payItem").find(".payInpIter").hide()
 			$(".xybVal").val("")//取消选择清除值
 			$(".xyb_overage span").text(xyb_price)
 		}else{
-			$(this).addClass("paychoisedIcon").removeClass("paychoiseIcon")
-				$(this).parents(".payItem").find(".payInpIter").show()
+			$(this).find(".xybPay").addClass("paychoisedIcon").removeClass("paychoiseIcon")
+				$(this).find(".xybPay").parents(".payItem").find(".payInpIter").show()
 
 			//另外两种选择取消
 			$(".kjPay").addClass("paychoiseIcon").removeClass("paychoisedIcon")
@@ -329,7 +329,7 @@ $(function(){
 
 			$(".xybVal").val("")//取消选择清除值
 		}
-		if($(this).hasClass("paychoisedIcon")||$(".yqbPay").hasClass("paychoisedIcon")){
+		if($(this).find(".xybPay").hasClass("paychoisedIcon")||$(".yqbPay").hasClass("paychoisedIcon")){
 			$(".xybVal").on("input propertychange",function(){
 				if($(".yqbVal").val()||$(".xybVal").val()){
 					$(".yesSelBtn").show()
@@ -346,14 +346,16 @@ $(function(){
 	//
 		})
 //	kj btn ---------------------------------------
-	$(".kjPay").on('click',function(){
-		if($(this).hasClass("paychoisedIcon")){
-			$(this).addClass("paychoiseIcon").removeClass("paychoisedIcon")
+	$(".kjPayLi").on('click',function(e){
+		if($(e.target).context.className=="descriptionIcon")
+		return
+		if($(this).find(".kjPay").hasClass("paychoisedIcon")){
+			$(this).find(".kjPay").addClass("paychoiseIcon").removeClass("paychoisedIcon")
 
 			$(".yesSelBtn").hide()
 			$(".noSelBtn").show()
 		}else{
-			$(this).addClass("paychoisedIcon").removeClass("paychoiseIcon")
+			$(this).find(".kjPay").addClass("paychoisedIcon").removeClass("paychoiseIcon")
 //			inp
 			$(".yqbInp").hide()
 			$(".xybInp").hide()
@@ -370,29 +372,33 @@ $(function(){
 		}
 	})
 //	zfb pay btn------------------------------------------------
-	$(".zfbPay").on('click',function(){
-		if($(this).hasClass("paychoisedIcon")){
-			$(this).addClass("paychoiseIcon").removeClass("paychoisedIcon")
 
-			$(".yesSelBtn").hide()
-			$(".noSelBtn").show()
-		}else{
-			$(this).addClass("paychoisedIcon").removeClass("paychoiseIcon")
+		$(".zbfPayLi").on('click',function(e){
+//			if($(e.target).context.className == "payItem")
+			console.log($(e.target).context.className!=="descriptionIcon")
+			if($(e.target).context.className=="descriptionIcon")
+			return
+			if($(this).find(".zfbPay").hasClass("paychoisedIcon")){
+				$(this).find(".zfbPay").addClass("paychoiseIcon").removeClass("paychoisedIcon")
+
+				$(".yesSelBtn").hide()
+				$(".noSelBtn").show()
+			}else{
+				$(this).find(".zfbPay").addClass("paychoisedIcon").removeClass("paychoiseIcon")
 //			inp
-			$(".yqbInp").hide()
-			$(".xybInp").hide()
-			//另外两种选择取消
-			$(".yqbPay").addClass("paychoiseIcon").removeClass("paychoisedIcon")
-			$(".xybPay").addClass("paychoiseIcon").removeClass("paychoisedIcon")
-			$(".kjPay").addClass("paychoiseIcon").removeClass("paychoisedIcon")
+				$(".yqbInp").hide()
+				$(".xybInp").hide()
+				//另外两种选择取消
+				$(".yqbPay").addClass("paychoiseIcon").removeClass("paychoisedIcon")
+				$(".xybPay").addClass("paychoiseIcon").removeClass("paychoisedIcon")
+				$(".kjPay").addClass("paychoiseIcon").removeClass("paychoisedIcon")
 
-			$(".yesSelBtn").show()
-			$(".noSelBtn").hide()
+				$(".yesSelBtn").show()
+				$(".noSelBtn").hide()
 
-			$(".xybVal").val("")//取消选择清除值
-		}
-	})
-//-----------------	可选按钮
+				$(".xybVal").val("")//取消选择清除值
+			}
+		})
 
 //	---------按钮数值
 	var yqbV =0

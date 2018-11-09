@@ -13,7 +13,6 @@
 </head>
 <body>
         <div class="pageWrap cardPage">
-
         	<div class="header_tit">
 				<span class="returnBtn"></span>
 				添加银行卡
@@ -46,7 +45,7 @@
 					</li>
 					<li class="car_card">
 						<span class="car_l">验证码</span>
-						<span class="car_r"><input type="text" placeholder="输入短信验证码"> <a href="javascript:;" class="repeatsend">重新发送 ( 48 )</a></span>
+						<span class="car_r entryYzm"><input type="text" placeholder="输入短信验证码"> <a href="javascript:;" class="repeatsend">重新发送 ( 48 )</a></span>
 					</li>
 				</ul>
 				<p class="readover">
@@ -62,14 +61,48 @@
 			</div>
 			<!--选择银行列表半弹层页-->
 			<div class="chioseCardBox" style="display: none">
-				<ul>
-					<li><span>苏州银行 <i class="carChioedIcon" style="display: none;"></i> </span><span>建设银行<i class="carChioedIcon" style="display: none;"></i></span></li>
-					<li><span>招商银行 <i class="carChioedIcon" style="display: none;"></i> </span><span>农业银行<i class="carChioedIcon" style="display: none;"></i></span></li>
-					<li><span>广大银行 <i class="carChioedIcon" style="display: none;"></i> </span><span>北京银行<i class="carChioedIcon" style="display: none;"></i></span></li>
-					<li><span>上海银行 <i class="carChioedIcon" style="display: none;"></i> </span><span>交通银行<i class="carChioedIcon" style="display: none;"></i></span></li>
-					<li><span>浦东银行 <i class="carChioedIcon" style="display: none;"></i> </span><span>江苏银行<i class="carChioedIcon" style="display: none;"></i></span></li>
-					<li><span>广州银行 <i class="carChioedIcon" style="display: none;"></i> </span><span>中国银行<i class="carChioedIcon" style="display: none;"></i></span></li>
-				</ul>
+				<!--原列表-->
+				<!--<ul>-->
+					<!--<li><span>苏州银行 <i class="carChioedIcon" style="display: none;"></i> </span><span>建设银行<i class="carChioedIcon" style="display: none;"></i></span></li>-->
+					<!--<li><span>招商银行 <i class="carChioedIcon" style="display: none;"></i> </span><span>农业银行<i class="carChioedIcon" style="display: none;"></i></span></li>-->
+					<!--<li><span>广大银行 <i class="carChioedIcon" style="display: none;"></i> </span><span>北京银行<i class="carChioedIcon" style="display: none;"></i></span></li>-->
+					<!--<li><span>上海银行 <i class="carChioedIcon" style="display: none;"></i> </span><span>交通银行<i class="carChioedIcon" style="display: none;"></i></span></li>-->
+					<!--<li><span>浦东银行 <i class="carChioedIcon" style="display: none;"></i> </span><span>江苏银行<i class="carChioedIcon" style="display: none;"></i></span></li>-->
+					<!--<li><span>广州银行 <i class="carChioedIcon" style="display: none;"></i> </span><span>中国银行<i class="carChioedIcon" style="display: none;"></i></span></li>-->
+				<!--</ul>-->
+				<style>
+					.chioseCardBox table{width:100%;table-layout: fixed;border-collapse:collapse;}
+				</style>
+				<table class="carListTable">
+					<tr>
+						<th></th>
+						<th></th>
+					</tr>
+					<tr>
+						<td><span>苏州银行 <i class="carChioedIcon" style="display: none;"></i></span></td>
+						<td><span>建设银行 <i class="carChioedIcon" style="display: none;"></i></span></td>
+					</tr>
+					<tr>
+						<td><span>招商银行 <i class="carChioedIcon" style="display: none;"></i> </span></td>
+						<td><span>农业银行 <i class="carChioedIcon" style="display: none;"></i> </span></td>
+					</tr>
+					<tr>
+						<td><span>广大银行 <i class="carChioedIcon" style="display: none;"></i> </span></td>
+						<td><span>农业银行 <i class="carChioedIcon" style="display: none;"></i> </span></td>
+					</tr>
+					<tr>
+						<td><span>招商银行 <i class="carChioedIcon" style="display: none;"></i> </span></td>
+						<td><span>广州银行 <i class="carChioedIcon" style="display: none;"></i> </span></td>
+					</tr>
+					<tr>
+						<td><span>招商银行 <i class="carChioedIcon" style="display: none;"></i> </span></td>
+						<td><span>广州银行 <i class="carChioedIcon" style="display: none;"></i> </span></td>
+					</tr>
+					<tr>
+						<td><span>招商银行 <i class="carChioedIcon" style="display: none;"></i> </span></td>
+						<td><span>广州银行 <i class="carChioedIcon" style="display: none;"></i> </span></td>
+					</tr>
+				</table>
 			</div>
         </div>
         <style>
@@ -82,22 +115,19 @@
 //1：点击选择银行按钮会弹出银行选择列表，并且图标切换向右箭头
 //2：选择一个银行会出现小角标，原银行栏目会实时更新为选择的银行
 //3点击选择银行（此时已经显示为具体银行）银行列表消失，箭头图标还原。
-
 	$(function(){
 	$(".readchoiseIcon").on('click',function(){
 		$(this).toggleClass("readchoisedIcon")
+		$(".addcard_footer").toggleClass("addcard_footerN")
 	})
 //		选择银行卡
 		$(".chioseCar").on("click",function(){
 		$(".chioseCardBox").fadeIn()
 		$(this).children(".chioseIcon").addClass("chioseIcon2").removeClass("chioseIcon")
-
 	})
-	$(".chioseCardBox li span").on("click",function(){
-		$(".chioseCardBox li span .carChioedIcon").css("display","none")
-		$(".chioseCardBox li span .carChioedIcon").removeClass("ch")
-		$(this).find(".carChioedIcon").toggle()
-		$(this).find(".carChioedIcon").addClass("ch")
+	$(".chioseCardBox table td").on("click",function(){
+		$(".chioseCardBox table .carChioedIcon").css("display","none")
+		$(this).find(".carChioedIcon").css("display","block")
 
 		var newCardName = $(this).text()
 		$(".chioseCar").find("em").text(newCardName)
@@ -106,6 +136,13 @@
 			$(".chioseCardBox").fadeOut()
 		},150)
 	})
+		//click mask
+		$(".chioseCardBox").on("click",function(e){
+			console.log()
+			if($(e.target).context.className == "chioseCardBox"){
+				$(".chioseCardBox").fadeOut()
+			}
+		})
 	})
      $(function(){
 //      btn
